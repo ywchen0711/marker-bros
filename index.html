@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>麥克筆兄弟 Marker Bros</title>
+  <meta name="description" content="Josh 和 Jasper 自己畫的搞笑漫畫：麥克筆畫什麼就變成真的！主演：Josh、Jasper、爸爸 Jeff、媽媽 Erin，還有柴犬麻糬。">
+  <meta name="theme-color" content="#ffd93d">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect x='5' y='1' width='6' height='10' rx='1.5' fill='%23ff4b3e' stroke='%231b1612'/%3E%3Cpath d='M5.5 11h5L8 15z' fill='%23ff4b3e' stroke='%231b1612'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Patrick+Hand&family=Huninn&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css?v=1">
+</head>
+<body>
+  <div id="shelf"></div>
+  <div id="reader" hidden>
+    <header class="bar">
+      <button id="home" class="btn">← <span data-t="shelf"></span></button>
+      <b id="epTitle"></b>
+      <span class="sp"></span>
+      <button id="mode" class="btn"></button>
+      <button id="lang" class="btn"></button>
+    </header>
+    <main id="stage"><div id="view"></div><button class="tap l" id="prev" aria-label="previous"></button><button class="tap r" id="next" aria-label="next"></button></main>
+    <footer class="bar foot">
+      <button id="bPrev" class="btn">‹</button>
+      <input type="range" id="slider" min="0" value="0">
+      <span id="count"></span>
+      <button id="bNext" class="btn">›</button>
+    </footer>
+    <div id="flipCtl" hidden><button id="flipBtn"></button><label><input type="checkbox" id="autoFlip"> <span data-t="auto"></span></label></div>
+  </div>
+  <script src="/hub.js" defer></script>
+  <script type="module" src="js/app.js?v=1"></script>
+</body>
+</html>
